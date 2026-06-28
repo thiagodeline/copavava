@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Copa VaVa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <header class="hero" style="padding: 60px 0 40px 0;">
+        <div class="container">
+            <div class="status-badge">Passo Final</div>
+            <h1>Inscrição do Time</h1>
+            <p class="hero-subtitle">Preencha os dados da sua line-up abaixo para validar sua vaga na tabela oficial.</p>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 600px; margin-bottom: 80px;">
+        
+        <form action="https://formspree.io/f/mrewkkab" method="POST" style="background-color: var(--bg-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 24px;">
+            
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--brand-cyan); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Nome do Time</label>
+                <input type="text" name="nome_do_time" required placeholder="Ex: LLL, Sentinels, etc." style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--brand-cyan); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Discord ou WhatsApp do Capitão</label>
+                <input type="text" name="contato_capitao" required placeholder="Ex: capitao#0000 ou (11) 99999-9999" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div style="border-top: 1px solid var(--border-color); margin: 10px 0;"></div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: #fff; font-size: 0.95rem;">Jogador 1 (Capitão) - Nick + Tag</label>
+                <input type="text" name="jogador_1" required placeholder="Ex: Aspas#BR1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: #fff; font-size: 0.95rem;">Jogador 2 - Nick + Tag</label>
+                <input type="text" name="jogador_2" required placeholder="Ex: Less#BR1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: #fff; font-size: 0.95rem;">Jogador 3 - Nick + Tag</label>
+                <input type="text" name="jogador_3" required placeholder="Ex: Saadhak#BR1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: #fff; font-size: 0.95rem;">Jogador 4 - Nick + Tag</label>
+                <input type="text" name="jogador_4" required placeholder="Ex: Cauanzin#BR1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: #fff; font-size: 0.95rem;">Jogador 5 - Nick + Tag</label>
+                <input type="text" name="jogador_5" required placeholder="Ex: Tuyz#BR1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <div>
+                <label style="display: block; font-weight: 600; margin-bottom: 4px; color: var(--text-secondary); font-size: 0.95rem;">Jogador Reserva (Opcional)</label>
+                <input type="text" name="jogador_reserva" placeholder="Ex: Demon1#NA1" style="width: 100%; padding: 12px 16px; background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-primary); font-size: 1rem; outline: none; box-sizing: border-box;">
+            </div>
+
+            <button type="submit" class="btn-primary" style="border: none; width: 100%; cursor: pointer; font-size: 1rem; margin-top: 10px;">Finalizar Inscrição Oficial</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Copa VaVa. Todos os direitos reservados.</p>
+            <p class="disclaimer">Este campeonato é independente e não possui vínculo direto com a Riot Games.</p>
+        </div>
+    </footer>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
+    </script>
+
+</body>
+</html>
